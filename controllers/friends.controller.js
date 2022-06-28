@@ -7,6 +7,7 @@ function postFriend(req, res) {
     });
   }
 
+  
   const newFriend = {
     name: req.body.name,
     id: model.length,
