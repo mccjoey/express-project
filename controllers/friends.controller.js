@@ -1,4 +1,4 @@
-const model = require('../models/friends.model')
+const model = require("../models/friends.model");
 
 function postFriend(req, res) {
   if (!req.body.name) {
@@ -6,7 +6,7 @@ function postFriend(req, res) {
       error: "Missing friend name",
     });
   }
-  
+
   const newFriend = {
     name: req.body.name,
     id: model.length,
@@ -33,8 +33,8 @@ function getFriendById(req, res) {
   }
 }
 
-module.exports ={ 
-    postFriend,
-    getFriends,
-    getFriendById    
-}
+module.exports = {
+  postFriend,
+  getFriends,
+  getFriendById,
+};
